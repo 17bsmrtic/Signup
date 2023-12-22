@@ -1,4 +1,33 @@
 
+// create three buttons 
+const rock = document.createElement('button'); 
+const paper = document.createElement('button'); 
+const scissors = document.createElement('button'); 
+
+rock.textContent = "rock"
+paper.textContent = "paper"
+scissors.textContent = "scissors"
+
+
+rock.addEventListener('click', () => {playRound('rock', getComputerSource())})
+paper.addEventListener('click', () => {playRound('paper', getComputerSource())})
+scissors.addEventListener('click', () => {playRound('scissors', getComputerSource())})
+
+// add buttons to the DOM
+
+const container = document.querySelector('#container');
+
+container.appendChild(rock);
+container.appendChild(paper);
+container.appendChild(scissors);
+
+
+// capture text from DOM
+
+const player = document.querySelector('#player');
+const computer = document.querySelector('#computer');
+const final = document.querySelector('#final');
+
 function getComputerSource(){
     choices = ["rock", "paper", "scissors"]
 
@@ -10,31 +39,44 @@ function getComputerSource(){
 
 function playRound(playerSelection, computerSource){
 
+    player.textContent = "Player Used: " + playerSelection
+    computer.textContent = "Computer Used: " + computerSource
+
+
     if (computerSource == "rock"){
         if(playerSelection == "rock")
-            return "You Tie"
+            final.textContent = "You Tie"
+            console.log("You Tie")
         if(playerSelection == "paper")
-            return "You Win"
+            final.textContent = "You Win"
+            console.log("You Win")
         if(playerSelection == "scissors")
-            return "You Lose"
+            final.textContent = "You Lose"
+            console.log("You Lose")
     }
 
     if (computerSource == "paper"){
         if(playerSelection == "rock")
-            return "You Lose"
+            final.textContent = "You Lose"
+            console.log("You Lose")
         if(playerSelection == "paper")
-            return "You Tie"
+            final.textContent = "You Tie"
+            console.log("You Tie")
         if(playerSelection == "scissors")
-            return "You Win"
+            final.textContent = "You Win"
+            console.log("You Win")
     }
 
     if (computerSource == "scissors"){
         if(playerSelection == "rock")
-            return "You Win"
+            final.textContent = "You Win"
+            console.log("You Win")
         if(playerSelection == "paper")
-            return "You Lose"
+            final.textContent = "You Lose"
+            console.log("You Lose")
         if(playerSelection == "scissors")
-            return "Tie"
+            final.textContent = "You Tie"
+            console.log("You Tie")
     }
     
 }
