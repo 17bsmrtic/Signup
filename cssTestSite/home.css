@@ -1,0 +1,104 @@
+
+body {
+    /* 100 vh means 100 percent of the viewport */
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 48px;
+
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex:1;
+}
+
+.footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    flex: 1;
+}
+
+.content{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.info{
+    padding-left: 100px;
+    padding-right: 100px;
+    flex: 1;
+}
+
+.quote{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E5E7EB;
+    flex: 1;
+}
+
+.action{
+    /* sds */
+    padding-left: 100px;
+    padding-right: 100px;
+    flex: 1;
+}
+
+.awesome{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.placeholder{
+    justify-content: center;
+    flex-basis: 25%;
+    text-align:center;
+    padding: 80px;
+    background-color: #E5E7EB;
+    color: black;
+
+}
+
+.logo{
+    font-weight: 800;
+}
+
+ul{
+    display:flex;
+    gap:10px;
+    list-style-type: none;
+    
+}
+
+button {
+
+    width: 200px;
+}
+
+/* When changing links themselves need to use a tag */
+a {
+
+    text-decoration: none;
+    color: #E5E7EB;
+}
