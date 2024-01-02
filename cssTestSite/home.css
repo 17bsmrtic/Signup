@@ -12,6 +12,13 @@ h1 {
 
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    
+}
+
 .header{
     display:flex;
     justify-content: space-between;
@@ -31,11 +38,13 @@ h1 {
     font-size: 18px;
     color: #E5E7EB;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .content{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 100px;
     background-color: #1F2937;
     color: #F9FAF8;
     flex: 1;
@@ -47,21 +56,56 @@ h1 {
 .info{
     padding-left: 100px;
     padding-right: 100px;
+    display:flex;
     flex: 1;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quote{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 600px;
+    padding-right: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #E5E7EB;
     flex: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saying{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.author{
+    color: #1F2937;
+    font-weight: 800;
+    align-self: flex-end;
 }
 
 .action{
     /* sds */
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.call{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #3882F6;
+    width:800px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .awesome{
@@ -84,6 +128,26 @@ h1 {
     font-weight: 800;
 }
 
+
+.imgContainers{
+    display: flex;
+    gap:50px;
+}
+.imgData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 10px;
+}
+
 ul{
     display:flex;
     gap:10px;
@@ -92,8 +156,12 @@ ul{
 }
 
 button {
-
-    width: 200px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
 }
 
 /* When changing links themselves need to use a tag */
