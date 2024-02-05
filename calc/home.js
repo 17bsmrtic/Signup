@@ -23,7 +23,9 @@ function setNum(number){
 
 function setOperate(op){
 
+    operate()
     operator = op
+    
 
 }
 
@@ -39,12 +41,20 @@ function operate() {
 
     var answer = 0
 
+    if(num1 === ''){
+        num1 = 0
+    }
+
+    if(num2 === ''){
+        num2 = num1
+    }
+
     number1 = parseInt(num1)
     number2 = parseInt(num2)
 
     // divide
     if(operator === '/'){
-        answer = number1 / number2
+        answer = Math.round(number1 / number2)
     }
 
     // multiply
@@ -61,6 +71,16 @@ function operate() {
     if(operator === '-'){
         answer = number1 - number2
     }
+
+    if(operator === ''){
+        answer = num1
+    }
+    
+
     document.getElementsByClassName('display')[0].innerText = answer
+    num1 = answer 
+    num2 = ''
+    operator = ''
+
 
 }
