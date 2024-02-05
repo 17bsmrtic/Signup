@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div class = "display">
-
+        Display
     </div>
     <div class = "calc">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>/</button>
+        <button onclick = "setNum('7')">7</button>
+        <button onclick = "setNum('8')">8</button>
+        <button onclick = "setNum('9')">9</button>
+        <button onclick = "setOperate('/')">/</button>
     </div>
     <div class = "calc">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>X</button>
+        <button onclick = "setNum('4')">4</button>
+        <button onclick = "setNum('5')">5</button>
+        <button onclick = "setNum('6')">6</button>
+        <button onclick = "setOperate('X')">X</button>
     </div>
     <div class = "calc">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
+        <button onclick = "setNum('1')">1</button>
+        <button onclick = "setNum('2')">2</button>
+        <button onclick = "setNum('3')">3</button>
+        <button onclick = "setOperate('-')">-</button>
     </div>
     <div class="calc">
-        <button>Clear</button>
-        <button>0</button>
-        <button>+</button>
-        <button>=</button>
+        <button onclick = "clr()">Clear</button>
+        <button onclick = "setNum('0')">0</button>
+        <button onclick = "setOperate('+')">+</button>
+        <button onclick = "operate()">=</button>
     </div>
     
 </body>

@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    
+    
+}
+
+button {
+    /* display: flex; */
+    /* flex-grow: 1; */
+    flex-basis: 5vw;
+}
+
+.calc{
+    flex-basis: 5vw;
+    justify-content: center;
+}
+
+
+.display{
+    background-color: grey;
+    margin-left: 39.9%;
+    margin-right: 39.9%;
+    padding: 40px;
+    justify-content: center;
+
+}
