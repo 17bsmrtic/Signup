@@ -5,39 +5,67 @@ body{
     overflow: hidden;
 }
 
-/* .content{
-    display:flex;
-    flex-direction: column;
+
+input:focus {
+    border: 3px solid blue;
+}
+
+/* input:valid {
+    border-color: green;
+} */
+
+input:invalid {
+    border-color: red;
+}
+
+@font-face {
+    font-family: lucky;
+    src: url(Luckyscratcher-149j.ttf);
+}
+
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: red;
+    top: 8rem;
+    text-align: center;
+    font-size: 2em;
+    font-family: lucky;
+}
+
+.content{
+    background-color: grey;
 }
 
 .form{
     flex: 1;
-} */
+} 
 
 .sign{
     padding: 10px;
+    background-color: grey;
 }
 
 p{
     padding: 10px;
 }
 
-div{
-   /* flex: 1;  */
+.image{
+    position: relative;
 }
-
-/* .image{
-    flex-basis: 25%;
-}*/
-
-.content{
-   /* padding: 20px;  */
-} 
-
 
 input{
     border-color: #E5E7EB;
     border-style: solid;
+    
 }
 
 .names,
@@ -47,14 +75,24 @@ input{
     gap: 20px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+
 .input{
     padding: 10px;
     box-shadow: 5px 10px 8px #888888;
+    background-color: white;
 }
 
 form{
     /* border: 1px solid; */
     
+}
+
+.grey{
+    background-color: grey;
 }
 
 
